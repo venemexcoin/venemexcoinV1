@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #efefef;
+    color: #363639;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ?-----Portada------ */
+
+.portada {
+    width: 100%;
+    background: #efefef;
+
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .5s ease-out all;
+}
+
+.portada.oculta {
+    transform: translateY(100%);
+}
+
+.portada .header {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.portada .header .logotipo {
+    font-size: 50px;
+    font-size: 900;
+    margin-bottom: 20px;
+}
+
+.portada .header .mensaje {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* ?----------MAIN------------- */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    width: 90%;
+    padding: 60px 0;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+}
+
+/* ------- Cuentas regreisva------ */
+#cuenta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.simply-section {
+    background: rgba(141, 133, 245, 0.2);
+    width: 188px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.simply-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* ?-------------------------------*/
+
+/* ----------Redes Sociales------- */
+
+.redes-sociales .btn-red-social {
+    width: 60px;
+    height: 60px;
+    padding: 8px 0;
+    display: inline-block;
+    min-width: 60px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    margin: 20px;
+    transition: .3s ease all;
+}
+
+.redes-sociales .btn-red-social.F1 {
+    background: #3b5898;
+}
+
+.redes-sociales .btn-red-social.T1 {
+    background: #55acee;
+}
+
+.redes-sociales .btn-red-social.Vk {
+    background: #4c75a3;
+}
+
+.redes-sociales .btn-red-social:hover {
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, .15);
+}
+
+@media screen and (max-width:800px) {
+    .portada {
+        width: 100%;
+    }
+
+    .portada .header .logotipo {
+        font-size: 30px;
+        font-size: 600;
+        margin-bottom: 10px;
+    }
+
+    .portada .header .mensaje {
+        font-size: 15px;
+        font-weight: 300;
+        color: #3b5898;
+    }
+
+    .simply-section {
+        background: rgba(141, 133, 245, 0.2);
+        width: 90px;
+        height: 90px;
+        margin: 0 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .simply-amount {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .simply-word {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .simply-section {
+        background: rgba(141, 133, 245, 0.2);
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .simply-amount {
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .simply-word {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .redes-sociales .btn-red-social {
+        width: 30px;
+        height: 30px;
+        padding: 5px 0;
+        display: inline-block;
+        min-width: 30px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 15px;
+        margin: 20px;
+        transition: .3s ease all;
+    }
+}
